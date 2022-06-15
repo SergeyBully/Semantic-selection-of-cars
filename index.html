@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Semantic</title>
+</head>
+<body>
+	<header class="cd-header">
+		<h1>Semantic selection of cars</h1>
+	</header>
+
+	<main class="cd-main-content">
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<ul class="cd-filters">
+					<li class="placeholder"> 
+						<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+					</li> 
+					<li class="filter all"><a class="selected" href="#0" data-type="all">All</a></li>
+					<li class="filter" data-filter=".electric"><a href="#0" data-type="electric">Electric</a></li>
+					<li class="filter" data-filter=".gasoline"><a href="#0" data-type="gasoline">Gasoline</a></li>
+					<li class="filter" data-filter=".hybrid"><a href="#0" data-type="hybrid">Hybrid</a></li>
+				</ul> <!-- cd-filters -->
+			</div> <!-- cd-tab-filter -->
+		</div> <!-- cd-tab-filter-wrapper -->
+
+		<section class="cd-gallery">
+			<ul id='main'>
+			    <li class="mix toyota hybrid front manual 4 hatchback four rearViewCamera automaticHighBeam spotlightsHalogenHeadlights emergencySafetySystem">
+			        <img onclick="functabs('1')" id='divcontentimg1' src="img/cars/Toyota/yaris.png" alt="Toyota - Yaris">
+			        <p onclick="functabs('1')" id='divcontent1' class='details hidden'>Vehicle - hybrid<br/>Wheel Drive - Front<br/>Transmission Type - Manual<br/>No. of cylinder - 4<br/>Body Style - Hatchback<br/>Doors - 4<br/>Rear view camera<br/>Automatic High Beam<br/>Spotlights halogen headlights<br/>Pre-emergency safety system</p>
+			        <p>Toyota<br /><span>Yaris</span></p>
+			    </li>
+			    <li class="mix toyota gasoline rear 2 sedan four automate emergencySafetySystem">
+			        <img onclick="functabs('2')" id='divcontentimg2' src="img/cars/Toyota/camry.png" alt="Toyota - Camry">
+			        <p onclick="functabs('2')" id='divcontent2' class='details hidden'>Vehicle - Gasoline<br/>Wheel Drive - Rear<br/>Transmission Type - Automate<br/>No. of cylinder - 2<br/>Body Style - Sedan<br/>Doors - 4<br/>Pre-emergency safety system</p>
+			        <p>Toyota<br /><span>Camry</span></p>
+			    </li>
+				<li class="mix toyota gasoline full manual 4 hatchback two">
+                    <img onclick="functabs('3')" id='divcontentimg3' src="img/cars/Toyota/c-hr.png" alt="Toyota - C-HR">
+                    <p onclick="functabs('3')" id='divcontent3' class='details hidden'>Vehicle - Gasoline<br/>Wheel Drive - Full<br/>Transmission Type - Manual<br/>No. of cylinder - 4<br/>Doors - 2<br/>Body Style - Hatchback</p>
+                    <p>Toyota<br/><span>C-HR</span></p>
+				</li>
+				<li class="mix toyota gasoline rear 2 sedan four automate emergencySafetySystem">
+                   <img onclick="functabs('4')" id='divcontentimg4' src="img/cars/Toyota/corolla.png" alt="Toyota - Corolla">
+                   <p onclick="functabs('4')" id='divcontent4' class='details hidden'>Vehicle - Gasoline<br/>Wheel Drive - Rear<br/>Transmission Type - Automate<br/>No. of cylinder - 2<br/>Body Style - Sedan<br/>Doors - 4<br/>Pre-emergency safety system</p>
+                    <p>Toyota<br/><span>Corolla</span></p>
+				</li>
+				<li class="mix toyota gasoline full largeSuv four rearViewCamera automaticHighBeam">
+                   <img onclick="functabs('5')" id='divcontentimg5' src="img/cars/Toyota/highlander.png" alt="Toyota - Highlander">
+                   <p onclick="functabs('5')" id='divcontent5' class='details hidden'>Vehicle - Gasoline<br/>Wheel Drive - Full<br/>Transmission Type - Manual<br/>Body Style - Large Suv<br/>Doors - 4<br/>Rear view camera<br/>Automatic High Beam</p>
+                    <p>Toyota<br/><span>Highlander</span></p>
+				    </li>
+				<li class="mix toyota hybrid full automate truck four emergencySafetySystem">
+                    <img onclick="functabs('6')" id='divcontentimg6' src="img/cars/Toyota/hilux.png" alt="Toyota - Hilux">
+                    <p onclick="functabs('6')" id='divcontent6' class='details hidden'>Vehicle - Hybrid<br/>Wheel Drive - Full<br/>Transmission Type - Automate<br/>Body Style - Truck<br/>Doors - 4<br/>Rear view camera<br/>Pre-emergency safety system</p>
+                    <p>Toyota<br/><span>Hilux</span></p>
+				    </li>
+				<li class="mix toyota gasoline full manual largeSuv four rearViewCamera automaticHighBeam spotlightsHalogenHeadlights emergencySafetySystem">
+                    <img onclick="functabs('7')" id='divcontentimg7' src="img/cars/Toyota/land_cruiser.png" alt="Toyota - Land Cruiser">
+                     <p onclick="functabs('7')" id='divcontent7' class='details hidden'>Vehicle - Gasoline<br/>Wheel Drive - Full<br/>Transmission Type - Manual<br/>Body Style - Large Suv<br/>Doors - 4<br/>Rear view camera<br/>Automatic High Beam<br/>Spotlights halogen headlights<br/>Pre-emergency safety system</p>
+                    <p>Toyota<br/><span>Land Cruiser</span></p>
+				    </li>
+				<li class="mix toyota gasoline full manual largeSuv four rearViewCamera">
+                   <img onclick="functabs('8')" id='divcontentimg8' src="img/cars/Toyota/land_cruiser_prado.png" alt="Toyota - Land Cruiser Prado">
+                   <p onclick="functabs('8')" id='divcontent8' class='details hidden'>Vehicle - Gasoline<br/>Wheel Drive - Full<br/>Doors - 4<br/>Transmission Type - Manual<br/>Body Style - Large Suv<br/>Rear view camera</p>
+                    <p>Toyota<br/><span>Land Cruiser Prado</span></p>
+				    </li>
+				<li class="mix toyota gasoline full automate 4 largeSuv four ">
+                    <img onclick="functabs('9')" id='divcontentimg9' src="img/cars/Toyota/rav4.png" alt="Toyota - RAV4">
+                    <p onclick="functabs('9')" id='divcontent9' class='details hidden'>Vehicle - Gasoline<br/>Wheel Drive - Full<br/>Transmission Type - Automate<br/>No. of cylinder - 4<br/>Body Style - Large Suv<br/>Doors - 4</p>
+                    <p>Toyota<br/><span>RAV4</span></p>
+				    </li>
+				<li class="mix toyota gasoline full automate 4 largeSuv four">
+                    <img onclick="functabs('10')" id='divcontentimg10' src="img/cars/Toyota/rav4_plug-in_hybrid.png" alt="Toyota - RAV4 plug-in hybrid">
+                    <p onclick="functabs('10')" id='divcontent10' class='details hidden'>Vehicle - Gasoline<br/>Wheel Drive - Full<br/>Transmission Type - Automate<br/>No. of cylinder - 4<br/>Body Style - Large Suv<br/>Doors - 4</p>
+                    <p>Toyota<br/><span>RAV4 plug-in hybrid</span></p>
+				    </li>
+				<li class="mix toyota rear automate 2 four hatchback rearViewCamera">
+                    <img onclick="functabs('11')" id='divcontentimg11' src="img/cars/Toyota/yaris_cross.png" alt="Toyota - Yaris cross">
+                    <p onclick="functabs('11')" id='divcontent11' class='details hidden'>Vehicle - Hybrid<br/>Wheel Drive - Rear<br/>Transmission Type - Automate<br/>No. of cylinder - 2<br/>Doors - 4<br/>Body Style - hatchback<br/>Rear view camera</p>
+                    <p>Toyota<br/><span>Yaris cross</span></p>
+				    </li>
+				<li class="mix hyundai gasoline rear manual 2 sedan four">
+                    <img onclick="functabs('12')" id='divcontentimg12' src="img/cars/Hyundai/elantra.png" alt="Hyundai - Elantra">
+                    <p onclick="functabs('12')" id='divcontent12' class='details hidden'>Vehicle - Gasoline<br/>Wheel Drive - Rear<br/>Transmission Type - Manual<br/>No. of cylinder - 2<br/>Body Style - Sedan<br/>Doors - 4</p>
+                    <p>Hyundai<br/><span>Elantra</span></p>
+				    </li>
+				<li class="mix hyundai hybrid rear automate 2 four hatchback rearViewCamera">
+                    <img onclick="functabs('13')" id='divcontentimg13' src="img/cars/Hyundai/i10.png" alt="Hyundai - I10">
+                    <p onclick="functabs('13')" id='divcontent13' class='details hidden'>Vehicle - Hybrid<br/>Wheel Drive - Rear<br/>Transmission Type - Automate<br/>No. of cylinder - 2<br/>Doors - 4<br/>Body Style - hatchback<br/>Rear view camera</p>
+                    <p>Hyundai<br/><span>I10</span></p>
+				    </li>
+				<li class="mix hyundai hybrid rear automate 2 four hatchback rearViewCamera">
+                    <img onclick="functabs('14')" id='divcontentimg14' src="img/cars/Hyundai/i30_hatchback.png" alt="Hyundai - I30 hatchback">
+                    <p onclick="functabs('14')" id='divcontent14' class='details hidden'>Vehicle - Hybrid<br/>Wheel Drive - Rear<br/>Transmission Type - Automate<br/>No. of cylinder - 2<br/>Doors - 4<br/>Body Style - hatchback<br/>Rear view camera</p>
+                    <p>Hyundai<br/><span>I30 hatchback</span></p>
+				    </li>
+				<li class="mix hyundai electric rear automate 2 four hatchback rearViewCamera">
+                    <img onclick="functabs('15')" id='divcontentimg15' src="img/cars/Hyundai/i30_wagon.png" alt="Hyundai - I30 wagon">
+                    <p onclick="functabs('15')" id='divcontent15' class='details hidden'>Vehicle - Electric<br/>Wheel Drive - Rear<br/>Transmission Type - Automate<br/>No. of cylinder - 2<br/>Doors - 4<br/>Body Style - hatchback<br/>Rear view camera</p>
+                    <p>Hyundai<br/><span>I30 wagon</span></p>
+				    </li>
+				<li class="mix hyundai electric rear automate 2 four hatchback rearViewCamera automaticHighBeam spotlightsHalogenHeadlights emergencySafetySystem">
+                    <img onclick="functabs('16')" id='divcontentimg16' src="img/cars/Hyundai/ioniq_5.png" alt="Hyundai - Ioniq 5">
+                    <p onclick="functabs('16')" id='divcontent16' class='details hidden'>Vehicle - Electric<br/>Wheel Drive - Rear<br/>Transmission Type - Automate<br/>No. of cylinder - 2<br/>Doors - 4<br/>Body Style - hatchback<br/>Rear view camera<br/>Automatic High Beam<br/>Spotlights halogen headlights<br/>Pre-emergency safety system</p>
+                    <p>Hyundai<br/><span>Ioniq 5</span></p>
+				    </li>
+				<li class="mix hyundai electric rear automate 2 four hatchback rearViewCamera automaticHighBeam spotlightsHalogenHeadlights emergencySafetySystem ">
+                    <img onclick="functabs('17')" id='divcontentimg17' src="img/cars/Hyundai/ioniq_electric.png" alt="Hyundai - Ioniq electric">
+                    <p onclick="functabs('17')" id='divcontent17' class='details hidden'>Vehicle - Electric<br/>Wheel Drive - Rear<br/>Transmission Type - Automate<br/>No. of cylinder - 2<br/>Doors - 4<br/>Body Style - hatchback<br/>Rear view camera<br/>Automatic High Beam<br/>Spotlights halogen headlights<br/>Pre-emergency safety system</p>
+                    <p>Hyundai<br/><span>Ioniq electric</span></p>
+				    </li>
+				<li class="mix hyundai gasoline front manual 4 hatchback four">
+                    <img onclick="functabs('18')" id='divcontentimg18' src="img/cars/Hyundai/kona.png" alt="Hyundai - Kona">
+                    <p onclick="functabs('18')" id='divcontent18' class='details hidden'>Vehicle - Gasoline<br/>Wheel Drive - Front<br/>Transmission Type - Manual<br/>No. of cylinder - 4<br/>Body Style - Hatchback<br/>Doors - 4</p>
+                    <p>Hyundai<br/><span>Kona</span></p>
+				    </li>
+				<li class="mix hyundai electric rear automate 2 four hatchback rearViewCamera">
+                    <img onclick="functabs('19')" id='divcontentimg19' src="img/cars/Hyundai/kona_electric.png" alt="Hyundai - Kona electric">
+                    <p onclick="functabs('19')" id='divcontent19' class='details hidden'>Vehicle - Electric<br/>Wheel Drive - Rear<br/>Transmission Type - Automate<br/>No. of cylinder - 2<br/>Doors - 4<br/>Body Style - hatchback<br/>Rear view camera</p>
+                    <p>Hyundai<br/><span>Kona electric</span></p>
+				    </li>
+				<li class="mix hyundai gasoline full manual largeSuv four rearViewCamera automaticHighBeam spotlightsHalogenHeadlights emergencySafetySystem">
+                    <img onclick="functabs('20')" id='divcontentimg20' src="img/cars/Hyundai/palisade.png" alt="Hyundai - Palisade">
+                    <p onclick="functabs('20')" id='divcontent20' class='details hidden'>Vehicle - Gasoline<br/>Wheel Drive - Full<br/>Transmission Type - Manual<br/>Body Style - Large Suv<br/>Doors - 4<br/>Rear view camera<br/>Automatic High Beam<br/>Spotlights halogen headlights<br/>Pre-emergency safety system</p>
+                    <p>Hyundai<br/><span>Palisade</span></p>
+				    </li>
+				<li class="mix hyundai gasoline full manual largeSuv four rearViewCamera">
+                    <img onclick="functabs('21')" id='divcontentimg21'src="img/cars/Hyundai/santa_fe.png" alt="Hyundai - Santa fe">
+                    <p onclick="functabs('21')" id='divcontent21' class='details hidden'>Vehicle - Gasoline<br/>Wheel Drive - Full<br/>Doors - 4<br/>Transmission Type - Manual<br/>Body Style - Large Suv<br/>Rear view camera</p>
+                    <p>Hyundai<br/><span>Santa fe</span></p>
+				    </li>
+				<li class="mix hyundai hybrid front manual 4 hatchback four rearViewCamera automaticHighBeam spotlightsHalogenHeadlights emergencySafetySystem">
+                    <img onclick="functabs('22')" id='divcontentimg22' src="img/cars/Hyundai/tucson.png" alt="Hyundai - Tucson">
+                    <p onclick="functabs('22')" id='divcontent22' class='details hidden'>Vehicle - hybrid<br/>Wheel Drive - Front<br/>Transmission Type - Manual<br/>No. of cylinder - 4<br/>Body Style - Hatchback<br/>Doors - 4<br/>Rear view camera<br/>Automatic High Beam<br/>Spotlights halogen headlights<br/>Pre-emergency safety system</p>
+                    <p>Hyundai<br/><span>Tucson</span></p>
+				    </li>
+				<li class="mix hyundai gasoline full manual 4 hatchback four">
+                    <img onclick="functabs('23')" id='divcontentimg23' src="img/cars/Hyundai/tucson_hybrid.png" alt="Hyundai - Tucson hybrid">
+                    <p onclick="functabs('23')" id='divcontent23' class='details hidden'>Vehicle - Gasoline<br/>Wheel Drive - Full<br/>Transmission Type - Manual<br/>No. of cylinder - 4<br/>Doors - 4<br/>Body Style - Hatchback
+                    <p>Hyundai<br/><span>Tucson hybrid</span></p>
+				    </li>
+				<li class="mix tesla electric full automate sedan four rearViewCamera automaticHighBeam spotlightsHalogenHeadlights emergencySafetySystem">
+                   <img onclick="functabs('24')" id='divcontentimg24' src="img/cars/Tesla/model_s.png" alt="Tesla - Model S">
+                   <p onclick="functabs('24')" id='divcontent24' class='details hidden'>Vehicle - Electric<br/>Wheel Drive - Full<br/>Transmission Type - Automate<br/>Body Style - Sedan<br/>Doors - 4<br/>Rear view camera<br/>Automatic High Beam<br/>Spotlights halogen headlights<br/>Pre-emergency safety system</p>
+                    <p>Tesla<br/><span>Model S</span></p>
+				    </li>
+				
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+			</ul>
+			<div class="cd-fail-message">No results found</div>
+		</section> <!-- cd-gallery -->
+
+		<div class="cd-filter">
+			<form>
+				<div class="cd-filter-block">
+					<h4>Search</h4>
+					
+					<div class="cd-filter-content" >
+						<input type="search" placeholder="Try Tesla...">
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Brand</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".tesla" type="checkbox" id="checkbox1">
+			    			<label class="checkbox-label" for="tesla">Tesla</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".toyota" type="checkbox" id="checkbox2">
+							<label class="checkbox-label" for="toyota">Toyota</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".hyundai" type="checkbox" id="checkbox3">
+							<label class="checkbox-label" for="hyundai">Hyundai</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+				
+				<div class="cd-filter-block">
+					<h4>Wheel Drive</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".front" type="checkbox" id="checkbox4">
+			    			<label class="checkbox-label" for="front">Front</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".rear" type="checkbox" id="checkbox5">
+							<label class="checkbox-label" for="rear">Rear</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".full" type="checkbox" id="checkbox6">
+							<label class="checkbox-label" for="full">Full</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+				
+                <div class="cd-filter-block">
+					<h4>Transmission Type</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".manual" type="checkbox" id="checkbox7">
+			    			<label class="checkbox-label" for="manual">Manual</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".automate" type="checkbox" id="checkbox5">
+							<label class="checkbox-label" for="automate">Automate</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+				
+				<div class="cd-filter-block">
+					<h4>No. of cylinder</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".2" type="checkbox" id="checkbox7">
+			    			<label class="checkbox-label" for="2">2</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".3" type="checkbox" id="checkbox5">
+							<label class="checkbox-label" for="3">3</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".4" type="checkbox" id="checkbox5">
+							<label class="checkbox-label" for="4">4</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+				
+				<div class="cd-filter-block">
+					<h4>Doors</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".two" type="checkbox" id="checkbox7">
+			    			<label class="checkbox-label" for="two">2</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".four" type="checkbox" id="checkbox5">
+							<label class="checkbox-label" for="four">4 </label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+				
+				<div class="cd-filter-block">
+					<h4>Body style</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".hatchback" type="checkbox" id="checkbox7">
+			    			<label class="checkbox-label" for="hatchback">Hatchback</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".sedan" type="checkbox" id="checkbox5">
+							<label class="checkbox-label" for="sedan">Sedan</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".truck" type="checkbox" id="checkbox5">
+							<label class="checkbox-label" for="truck">Truck</label>
+						</li>
+				        <li>
+							<input class="filter" data-filter=".largeSuv" type="checkbox" id="checkbox5">
+							<label class="checkbox-label" for="largeSuv">Large Suv</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".minivan" type="checkbox" id="checkbox5">
+							<label class="checkbox-label" for="minivan">Minivan</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+				
+				<div class="cd-filter-block">
+					<h4>Security tools</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".rearViewCamera" type="checkbox" id="checkbox7">
+			    			<label class="checkbox-label" for="rearViewCamera">Rear view camera</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".automaticHighBeam" type="checkbox" id="checkbox5">
+							<label class="checkbox-label" for="automaticHighBeam">Automatic high beam</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".spotlightsHalogenHeadlights" type="checkbox" id="checkbox5">
+							<label class="checkbox-label" for="spotlightsHalogenHeadlights">Spotlights halogen headlights</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".emergencySafetySystem" type="checkbox" id="checkbox5">
+							<label class="checkbox-label" for="emergencySafetySystem">Pre-emergency safety system</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+
+			</form>
+
+			<a href="#0" class="cd-close">Close</a>
+		</div> <!-- cd-filter -->
+
+		<a href="#0" class="cd-filter-trigger">Filters</a>
+	</main> <!-- cd-main-content -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>

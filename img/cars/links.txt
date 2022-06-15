@@ -1,0 +1,61 @@
+Hyundai - https://hyundai.com.ua/
+Toyota - https://www.toyota.ua/new-cars
+
+Lytvynenko SV WEB-service of semantic selection of a car. KNU, Kyiv, 2022
+Keywords: WEB-service, WEB-application, semantics, selection, development, car.
+The object of the application is the process of creating a WEB service for the semantic selection of a car.
+The purpose of the study: is to create a WEB-service of semantic selection of a car and theoretically describe each step of creating a service. WEB-service must quickly perform tasks, and be convenient and intuitive to use.
+In the course work, the WEB services of a semantic selection of the car were analyzed and described, the main features of the creation of the WEB-service of semantic selection of the car are noted, the used technologies and principles of software creation are described, and WEB services of a semantic selection of the car are tested.
+The obtained result is useful when performing similar WEB services, or implementing a semantic selection of any product in existing WEB services.
+
+це мова програмування, яка є однією з основних технологій всесвітньої мережі, поряд з HTML і CSS. Понад 97% веб-сайтів використовують JavaScript на стороні клієнта для поведінки веб-сторінок, часто включають сторонні бібліотеки. Усі основні веб-браузери мають спеціальний механізм JavaScript для виконання коду на пристроях користувачів.
+
+JavaScript — це мова високого рівня, часто скомпільована «точно вчасно», яка відповідає стандарту ECMAScript. Він має динамічний введення тексту, орієнтацію на об’єкт на основі прототипу та першокласні функції. Це багатопарадигмальний, підтримує керовані подіями, функціональні та імперативний стилі програмування. Він має інтерфейси прикладного програмування (API) для роботи з текстом, датами, регулярними виразами, стандартними структурами даних і об’єктною моделлю документа (DOM).
+
+var buttonFilter = {
+$filters: null,
+groups: [],
+outputArray: [],
+outputString: '',
+init: function(){
+ 	var self = this; 
+ 	self.$filters = $('.cd-main-content');
+ 	self.$container = $('.cd-gallery ul');
+ 
+  self.$filters.find('.cd-filters').each(function(){
+    	var $this = $(this);
+    
+   self.groups.push({
+       $inputs: $this.find('.filter'),
+       active: '',
+       tracker: false
+   });
+  });
+  
+  self.bindHandlers();
+},
+bindHandlers: function(){
+ 	var self = this;
+ 	self.$filters.on('click', 'a', function(e){
+    	self.parseFilters();
+ 	});
+  self.$filters.on('change', function(){
+    self.parseFilters();           
+  });
+},
+
+Вірменська мова не почала відображатися 
+
+
+  SAR_SIGN_16_9                  158  12     26588   163928644      6165.5    13127.88      389952          0x15fc52c
+  SAR_SIGN_3_5                   227  12     26588   163342226      6143.5    13081.46      389906          0x15fc52c
+  SAR_SIGN_4_3                   232  12     26588   163870782      6163.3    13121.61      389425          0x15fc52c
+  SAR_SIGN_5_3                   237  12     26588   163869807      6163.3    13121.33      389427          0x15fc52c
+
+  SAR_SIGN_16_9                  158  12     27206   169866948      6243.7    13522.78      389952          0x15fc52c
+  SAR_SIGN_3_5                   227  12     27206   169249763      6221.0    13474.27      389906          0x15fc52c
+  SAR_SIGN_4_3                   232  12     27206   169807870      6241.6    13515.26      389425          0x15fc52c
+  SAR_SIGN_5_3                   237  12     27206   169806820      6241.5    13514.95      389427          0x15fc52c
+
+
+  ARM
